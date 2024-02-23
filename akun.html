@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Akun HepiHepi</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: white; /* Ungu tua */
+            color:black;
+            margin: 0;
+            padding: 0;
+        }
+        .navbar {
+            background-color: white; /* Ungu tua lebih tua */
+            padding: 15px;
+        }
+        .navbar a {
+            color: black;
+            text-decoration: none;
+            margin-right: 20px;
+        }
+        .container {
+            max-width: 1000px;
+            margin: 50px auto;
+            padding: 20px;
+            background-color:bisque; /* Ungu tua lebih cerah */
+            border-radius: 10px;
+        }
+        h2 {
+            color:black;
+            margin-bottom: 20px;
+        }
+        label {
+            display: block;
+            margin-bottom: 10px;
+        }
+        input[type="text"], select {
+            width: 80%;
+            padding: 10px;
+            margin-bottom: 20px;
+        }
+        button {
+            background-color: #4B0082; /* Ungu tua lebih tua */
+            color: #fff;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #800080; /* Ungu tua lebih gelap */
+        }
+
+/* Navbar styles */
+.navbar {
+    background-color : white; /* Warna latar belakang navbar */
+    overflow: hidden;
+}
+
+.navbar a {
+    float: left;
+    display: block;
+    color: black; /* Warna teks */
+    text-align: center;
+    padding: 14px 20px; /* Jarak antara teks dan batas navbar */
+    text-decoration: none;
+}
+
+.navbar a:hover {
+    background-color: #ddd; /* Warna latar belakang saat dihover */
+    color: black; /* Warna teks saat dihover */
+}
+
+.dropdown {
+    float: left;
+    overflow: hidden;
+}
+
+.dropdown .dropbtn {
+    font-size: 16px;
+    border: none;
+    outline: none;
+    color: black; /* Warna teks */
+    text-align: center;
+    padding: 14px 20px;
+    background-color: inherit;
+    margin: 0;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #333; /* Warna latar belakang dropdown */
+    min-width: 160px;
+    z-index: 1;
+}
+
+.dropdown-content a {
+    float: none;
+    color: #f2f2f2; /* Warna teks */
+    padding: 12px 16px; /* Jarak antara teks dan batas dropdown */
+    text-decoration: none;
+    display: block;
+    text-align: left;
+}
+
+.dropdown-content a:hover {
+    background-color: #ddd; /* Warna latar belakang saat dihover */
+    color: black; /* Warna teks saat dihover */
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+    </style>
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-2">
+                    <div class="header__logo">
+                        <a href="./index.html">
+                            <img src="img/logo.png" alt="">
+                        </a>
+                    </div>
+                </div>
+    <div class="navbar">
+        <a href="index.html">Homepage</a>
+        <div class="dropdown">
+            <button class="dropbtn">Categories</button>
+            <div class="dropdown-content">
+                <a href="concert.html">Concert</a>
+                <a href="sports.html">Sports</a>
+                <a href="teather.html">Teather</a>
+                <a href="family.html">Family</a>
+            </div>
+        </div>
+        <a href="order.html">Order</a>
+        <a href="blog-details.html">Contacts</a>
+    </div>
+
+    <div class="container">
+        <h2>Data Diri</h2>
+        <form action="#">
+            <label for="fullname">Nama Lengkap:</label>
+            <input type="text" id="fullname" name="fullname">
+
+            <label for="ktp">Nomor KTP:</label>
+            <input type="text" id="ktp" name="ktp">
+
+            <label for="phone">Nomor Telepon:</label>
+            <input type="text" id="phone" name="phone">
+
+            <label for="address">Alamat:</label>
+            <input type="text" id="address" name="address">
+
+            <label for="dob">Tanggal Lahir:</label>
+            <input type="text" id="dob" name="dob">
+
+            <button type="submit">Simpan</button>
+        </form>
+
+        <h2>Data Pembayaran</h2>
+        <form action="#">
+            <label for="payment-type">Jenis Pembayaran:</label>
+            <select id="payment-type" name="payment-type">
+                <option value="credit-card">Kartu Kredit</option>
+                <option value="bank-transfer">Transfer Bank</option>
+            </select>
+
+            <label for="payment-info">Nomor Telepon / Rekening:</label>
+            <input type="text" id="payment-info" name="payment-info">
+
+            <button type="submit">Simpan</button>
+        </form>
+    </div>
+</body>
+</html>
