@@ -2351,6 +2351,10 @@ font-family: "Poppins", sans-serif;
 		padding: 250px 0 42px 15px;
 
 	}
+	.product__item__pic3 {
+		position: relative;
+		height: 200px;
+	}
 
 	.hero__items img{
 		filter: brightness(50%);
